@@ -114,9 +114,9 @@ var commands = {
         exec: (msg) =>{
             
             bot.sendMessage({chat_id: msg.chat.id, text:"Привет, это TrainPix bot.\nИспользуй команды:\n/train {название} - информация и фото поезда\n/photo {название} - фото поезда\n/random - случайное фото\n\nПримеры:\n/photo ЭД4М-0370\n/train ЭД9Т\n\nИнлайн режим: в любом чате введите @tpix_bot и название поезда, чтобы отправить фото в этот чат."});
-        
+	    bot.sendMessage({chat_id: msg.chat.id, text: "Пользуясь функциями бота, вы соглашаетесь и обязуетесь соблюдать правила сайта trainpix.org/rules/"});
         }
-		}
+	}
     ],
     
     find: (text) => {
